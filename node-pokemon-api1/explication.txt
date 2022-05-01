@@ -1,0 +1,22 @@
+NODEJS AVEC EXPRESS pour créer une API REST
+
+"npm init" = 
+pour initié npm et créer le fichier package.json
+
+"npm install express --save" = 
+installer express et le mettre dans le "dépendencies" de package.json, crée le dossier node_modules et le fichier package-lock.json
+(express est le framework le plus populaire pour créer des API rest avec nodejs)
+
+"npm run start" = 
+run le script "start" situé dans package.json, sois l'équivalent de "node app.js"
+
+"npm install --save-dev nodemon" =
+installer nodemon et l ajoute dans le devdependencies.
+(nodemon sert a arreter et relancer le serveur nodejs automatiquement a chaque changementde code.
+pour le faire fonctionner, il faut changer "node nomdufichier" par "nodemon nomdifichier" a l'execution ou au script de demarrage dans package.json)
+
+["--save" = rajoute le paquet dans le "dependencies" qui sert a faire tourner l application
+"--save-dev" = rajoute le paquet dans la "devdependencies" qui sert a faire tourner l application uniquement pendant le developpement]
+
+require() = Va cherche le "paquet" dans le fichier node_modules
+.listen(port, function(){ex console.log}) = lire le port d'execution

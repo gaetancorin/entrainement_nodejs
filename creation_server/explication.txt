@@ -1,0 +1,9 @@
+installer nodejs sur le pc.
+verifier l'installation avec "node --version" dans le terminal
+
+pour lancer nodejs sur un fichier = ecrire dans le terminal "node nomdufichier"
+
+(lien documentation:
+https://nodejs.org/en/docs/
+https://devdocs.io/node/
+)

@@ -1,0 +1,42 @@
+notre API rest/les API rest? = notre application avec nodejs?/ dépendances?
+"On a mit en place un jeu de donnée qui est mit en place par notre API REST"
+
+endpoint/point de terminaison = c'est le coeur d'express, il recoit un requete et renvois une response
+dependances = les différents paquets que a besoin notre application pour fonctionner
+(créer une instance = créer une variable avec un objet)
+paquet = ensemble de codes que l'on a télécharger
+RESPONSE HTTP: réponse envoyé par notre point de terminaison
+Les données envoyé par la reponse http doivent être envoyé en format .json
+TYPE MIME: il faut indiquer un type mime lorsqu'on repond a une requete http
+reponse .json = Content-Type: aplication/json
+response simple page web = Content-Type: text/html
+code de status: c'est le code a 3 chiffre indiquant le status de la reponse.
+(200=requete a bien etait traiter, 404= ressource non trouver)
+
+Middlewares = Ce sont des fonctions js capable d'interagir avec des fonction entrant et sortantes de mon API rest
+
+
+
+require(express) = Va cherche le "paquet" express dans le fichier node_modules
+express() = execute le module express
+
+point de terminaison express=  app.get(path, (req,res) => res.send("lol"))
+point de terminaison express=  app.METHODE(CHEMIN, GESTIONNAIRE(req,res))
+req=request= requete recu en entrée par notre point de terminaison
+res=response=objet que l'on doit renvoyer depuis express a notre client
+
+res.send() = retourne le message au client
+res.json() = retourne uniquement du json
+
+.listen(port, function(){ex console.log}) = lire le port d'execution
+
+recuperer des parametres avec la req = 
+app.get('/api/:truc/:id',(req, res) => {
+    const truc = req.params.truc
+    const id = req.params.id}
+
+methode des accolade, appellé "affectation destructuré"= 
+permet de recuperer uniquement une variable d'un autre page avec require.
+const { success } = require('./helper');
+
+

@@ -1,0 +1,23 @@
+notre API rest/les API rest? = notre application avec nodejs?/ dépendances?
+"On a mit en place un jeu de donnée qui est mit en place par notre API REST"
+endpoint/point de terminaison = c'est le coeur d'express, il recoit un requete et renvois une response(.get,.post ou .delete)
+dependances = les différents paquets que a besoin notre application pour fonctionner
+(créer une instance = créer une variable avec un objet)
+paquet = ensemble de codes que l'on a télécharger
+
+require(express) = Va cherche le "paquet" express dans le fichier node_modules
+express() = execute le module express
+
+point de terminaison express=  app.get(path, (req,res) => res.send("lol"))
+point de terminaison express=  app.METHODE(CHEMIN, GESTIONNAIRE(req,res))
+req=request= requete recu en entrée par notre point de terminaison
+res=response=objet que l'on doit renvoyer depuis express a notre client
+
+res.send() = retourne le message au client
+
+.listen(port, function(){ex console.log}) = lire le port d'execution
+
+recuperer des parametres avec la req = 
+app.get('/api/:truc/:id',(req, res) => {
+    const truc = req.params.truc
+    const id = req.params.id}
